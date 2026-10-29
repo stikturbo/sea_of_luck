@@ -1,0 +1,171 @@
+@font-face {
+  font-family: Museo;
+  src: url("assets/fonts/museosanscyrl_100.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #b3f8cc;
+  color: #080808;
+  font-family: Museo, Arial, sans-serif;
+  font-weight: 100;
+}
+
+main { max-width: 1920px; margin: auto; }
+
+.screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #b3f8cc;
+  container-type: inline-size;
+}
+
+h1, h2, p { margin: 0; font-weight: 100; }
+.screen img { display: block; position: absolute; height: auto; }
+
+.first-screen h1 {
+  position: absolute;
+  left: 8.5%;
+  top: 18.5%;
+  font-size: 6.6cqw;
+  line-height: 1.07;
+}
+
+.first-screen p {
+  position: absolute;
+  left: 8.5%;
+  top: 57%;
+  font-size: 2.45cqw;
+  line-height: 1.22;
+}
+
+.first-screen img { left: 58.3%; top: 17.6%; width: 36.5%; }
+
+.second-screen h2 {
+  position: absolute;
+  left: 8.5%;
+  top: 19%;
+  font-size: 5.2cqw;
+  line-height: 1.18;
+}
+
+.second-screen p {
+  position: absolute;
+  left: 8.5%;
+  top: 57%;
+  width: 32%;
+  font-size: 2.45cqw;
+  line-height: 1.22;
+}
+
+.second-screen img { left: 59.1%; top: 19%; width: 34.4%; }
+
+.third-screen img { left: 7.3%; top: 18%; width: 65.6%; }
+.third-screen .island-mobile { display: none; }
+
+.third-screen p {
+  position: absolute;
+  left: 50.5%;
+  top: 18.5%;
+  width: 44%;
+  padding: 0 0 1cqw;
+  background: #b3f8cc;
+  font-size: 2.45cqw;
+  line-height: 1.22;
+}
+
+.fourth-screen > img { left: 8.1%; top: 3.2%; width: 27.6%; }
+
+.price-text {
+  position: absolute;
+  left: 42.1%;
+  top: 13.5%;
+  width: 49.5%;
+}
+
+.price-text h2 { font-size: 6.6cqw; line-height: 1.08; }
+
+.prices {
+  margin-top: 3.6cqw;
+  border-top: 2px solid #222;
+  font-size: 1.3cqw;
+}
+
+.prices div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1cqw;
+  padding: 0.55cqw 0;
+  border-bottom: 1px solid #438f60;
+}
+
+.prices span:last-child { text-align: right; }
+
+.price-text p {
+  width: 80%;
+  margin-top: 2.1cqw;
+  font-size: 1.3cqw;
+  line-height: 1.25;
+}
+
+.last-screen h2 {
+  position: absolute;
+  left: 8.5%;
+  top: 24.5%;
+  font-size: 5.2cqw;
+  line-height: 1.17;
+}
+
+.last-screen .final-illustration { left: 50%; top: 15.7%; width: 42.2%; }
+
+.last-screen footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 19.8%;
+  background: #45ae6b;
+  color: white;
+}
+
+.last-screen footer p {
+  position: absolute;
+  left: 8.5%;
+  top: 22%;
+  font-size: 2.4cqw;
+  line-height: 1.18;
+}
+
+.last-screen footer img { left: 67%; top: 25%; width: 16.2%; }
+
+@media (max-width: 700px) {
+  .screen { aspect-ratio: auto; min-height: 650px; padding: 44px 8%; }
+  .screen h1, .screen h2, .screen p, .screen img, .price-text { position: static; }
+  .screen h1, .screen h2 { font-size: 54px; line-height: 1.12; }
+  .screen p { width: auto; font-size: 23px; line-height: 1.28; }
+  .screen img { max-width: 100%; margin: 36px auto 0; }
+  .first-screen p, .second-screen p { margin-top: 36px; }
+  .first-screen img, .second-screen img { width: 74%; }
+  .third-screen { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
+  .third-screen p { padding: 0; }
+  .third-screen img { width: 100%; margin-top: 40px; }
+  .third-screen .island-desktop { display: none; }
+  .third-screen .island-mobile { display: block; }
+  .fourth-screen { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
+  .fourth-screen > img { width: 52%; margin-top: 35px; }
+  .price-text { width: auto; }
+  .prices { margin-top: 34px; font-size: 14px; }
+  .prices div { gap: 12px; padding: 10px 0; }
+  .price-text p { margin-top: 25px; font-size: 17px; }
+  .last-screen { min-height: 700px; padding-bottom: 160px; }
+  .last-screen .final-illustration { width: 85%; margin-top: 45px; }
+  .last-screen footer { height: 140px; }
+  .last-screen footer p { position: absolute; left: 8%; top: 30px; font-size: 17px; }
+  .last-screen footer img { position: absolute; left: auto; right: 8%; top: 32px; width: 120px; margin: 0; }
+}
