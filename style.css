@@ -144,28 +144,3 @@ h1, h2, p { margin: 0; font-weight: 100; }
 
 .last-screen footer img { left: 67%; top: 25%; width: 16.2%; }
 
-@media (max-width: 700px) {
-  .screen { aspect-ratio: auto; min-height: 650px; padding: 44px 8%; }
-  .screen h1, .screen h2, .screen p, .screen img, .price-text { position: static; }
-  .screen h1, .screen h2 { font-size: 54px; line-height: 1.12; }
-  .screen p { width: auto; font-size: 23px; line-height: 1.28; }
-  .screen img { max-width: 100%; margin: 36px auto 0; }
-  .first-screen p, .second-screen p { margin-top: 36px; }
-  .first-screen img, .second-screen img { width: 74%; }
-  .third-screen { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
-  .third-screen p { padding: 0; }
-  .third-screen img { width: 100%; margin-top: 40px; }
-  .third-screen .island-desktop { display: none; }
-  .third-screen .island-mobile { display: block; }
-  .fourth-screen { display: flex; flex-direction: column-reverse; justify-content: flex-end; }
-  .fourth-screen > img { width: 52%; margin-top: 35px; }
-  .price-text { width: auto; }
-  .prices { margin-top: 34px; font-size: 14px; }
-  .prices div { gap: 12px; padding: 10px 0; }
-  .price-text p { margin-top: 25px; font-size: 17px; }
-  .last-screen { min-height: 700px; padding-bottom: 160px; }
-  .last-screen .final-illustration { width: 85%; margin-top: 45px; }
-  .last-screen footer { height: 140px; }
-  .last-screen footer p { position: absolute; left: 8%; top: 30px; font-size: 17px; }
-  .last-screen footer img { position: absolute; left: auto; right: 8%; top: 32px; width: 120px; margin: 0; }
-}
